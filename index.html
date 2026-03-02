@@ -1,10 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
 <body>
-    <h1>Welcome to My Website</h1>
-    <p>Contact us at: <span id="email-placeholder">${EMAIL}</span></p>
+    <p>Contact: <script>document.write(process.env.REACT_APP_EMAIL);</script></p>
+    <p>Other HTML content...</p>
+    <!-- Rest of the index.html file -->
 </body>
 </html>
